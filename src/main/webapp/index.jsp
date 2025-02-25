@@ -7,21 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>Umleitung zur Startseite in 4 Sekunden...</h1>
 
-	<h1>Hello World!</h1>
-	
-	<%-- a comment --%>
-
-	<%-- scriptlet: une balise permettant d'ecrire du java dans un fichier jsp --%>
-	<ul>
-	<% 
-		for (int i = 0; i < 5; i++) {
-			out.append("<li>list item " + i + "</li>");
-		}
-	%>
-	</ul>
-
-
-
+	<script>
+		setTimeout(() => {
+			window.location.href = "pages/HomePage.jsp";
+		}, 4000);
+	</script>
 </body>
 </html>

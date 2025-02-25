@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+.login-image-container {
+    flex-grow: 3;
+    flex-basis: 20rem;
+  }
+ .login-details {
+    flex-grow: 1;
+  }
+  
