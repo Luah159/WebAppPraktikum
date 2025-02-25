@@ -1,0 +1,2 @@
+# WebAppPraktikum
+Webanwendungssystemsprojekt - Hochschule Ludwigshafen
