@@ -1,5 +1,7 @@
 <%@page import="models.Product"%>
 <%@page import="dao.ProductDAO"%>
+<%@page import=java.util.List %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
  
 <!DOCTYPE html>
@@ -47,7 +49,11 @@
       <div class="product-list"> 
 		<%! ProductDAO productDao = new ProductDAO(); %>
 		
-		<% for (Product p: productDao.getAllProducts()) { %>
+		<% 
+			List<Product> products = productDao.getAllProducts();
+			List<Product> headProducts = products.subList(0, 5);
+		
+		for (Product p: headProducts) { %>
         <div class="product-card">
           <img class="product-card-image" src="<%= request.getContextPath() %>/images/hero-image.jpg" alt="Product X">
           <main class="product-card-body">
@@ -61,7 +67,7 @@
     </section>
     
     <section class="teaser">
-      <h2 class="heading1">Teaser</h2>
+      <h2 class="heading1">Produkte</h2>
  
       <div class="product-list">
         <div class="product-card">

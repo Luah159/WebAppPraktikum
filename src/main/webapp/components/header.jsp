@@ -11,7 +11,10 @@
           <a class="nav-menu-item-link" href="#best">Beste Produkte</a>
         </li>
         <li class="nav-menu-item">
-          <a class="nav-menu-item-link" href="#">Kataloge</a>
+          <a class="nav-menu-item-link" href="#">Sales</a>
+        </li>
+        <li class="nav-menu-item">
+          <a class="nav-menu-item-link" href="#">Katalog</a>
         </li>
       </ul>
     </nav>
